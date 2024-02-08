@@ -37,5 +37,21 @@ qr_size_textbox.pack()
 
 
 
+# GETTING INPUT OF LOCATION TO SAVE QRcode
+qr_location_Label = Label(root, text="Location to save the QR Code: ")
+qr_location_Label.pack()
+qr_location_textbox = Entry(root)
+qr_location_textbox.pack()
+
+
+
+# GETTING INPUT OF QRcode IMAGE NAME
+qr_name_Label = Label(root, text="Name of the QR Code: ")
+qr_name_Label.pack()
+qr_name_textbox = Entry(root)
+qr_name_textbox.pack()
+
+
+
 # RUN TILL CLOSED
 root.mainloop()
