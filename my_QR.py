@@ -11,8 +11,13 @@ root.config(bg='Gray40')
 
 # FUNCTION TO GENERATE QRcode AND SAVE IT
 def generateCode():
-    return
-
+    qr = qrcode.QRCode(version=qr_size_textbox.get(), box_size=10, border=5)  # creating a QRcode of specified size
+    qr_data = qr.add_data(getURL_textbox.get())                 # adding data to be encoded to the QRCode
+    qr_creation = qr.make(fit=True)                             # making the entire QRcode space utilized
+    qr_img_generation = qr.make_image()                         # generating the QRcode
+    qr_fileDirectory = qr_location_textbox.get() + '\\' + qr_name_textbox.get()  # getting the directory to be save
+    qr_img_generation.save(f'{qr_fileDirectory}.png')           # saving the QRcode
+    
 
 
 # LABEL FOR WINDOW
