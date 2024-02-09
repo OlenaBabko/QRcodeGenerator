@@ -30,7 +30,7 @@ title_Label.pack(pady=50)
 getURL_Label = Label(root, text="Enter the URL(text): ", fg='black', font=('Courier', 12, 'bold'))
 getURL_Label.pack(anchor=CENTER, pady=10)
 getURL_textbox = Entry(root)
-getURL_textbox.pack()
+getURL_textbox.pack(anchor=CENTER)
 
 
 
@@ -38,7 +38,7 @@ getURL_textbox.pack()
 qr_size_Label = Label(root, text="Size from 1 to 40 (1=21x21): ", fg='black', font=('Courier', 12, 'bold'))
 qr_size_Label.pack(anchor=CENTER, pady=10)
 qr_size_textbox = Entry(root)
-qr_size_textbox.pack()
+qr_size_textbox.pack(anchor=CENTER)
 
 
 
@@ -46,7 +46,7 @@ qr_size_textbox.pack()
 qr_location_Label = Label(root, text="Location to save the QR Code: ", font=('Courier', 12, 'bold'))
 qr_location_Label.pack(anchor=CENTER, pady=10)
 qr_location_textbox = Entry(root)
-qr_location_textbox.pack()
+qr_location_textbox.pack(anchor=CENTER)
 
 
 
@@ -54,7 +54,7 @@ qr_location_textbox.pack()
 qr_name_Label = Label(root, text="Name of the QR Code: ", font=('Courier', 12, 'bold'))
 qr_name_Label.pack(anchor=CENTER, pady=10)
 qr_name_textbox = Entry(root)
-qr_name_textbox.pack()
+qr_name_textbox.pack(anchor=CENTER)
 
 
 
