@@ -17,7 +17,7 @@ def generateCode():
     qr_img_generation = qr.make_image()                         # generating the QRcode
     qr_fileDirectory = qr_location_textbox.get() + '\\' + qr_name_textbox.get()  # getting the directory to be save
     qr_img_generation.save(f'{qr_fileDirectory}.png')           # saving the QRcode
-    
+
 
 
 # LABEL FOR WINDOW
@@ -56,6 +56,11 @@ qr_name_Label.pack()
 qr_name_textbox = Entry(root)
 qr_name_textbox.pack()
 
+
+
+# BUTTON TO GENERATE AND SAVE QRcode
+button = Button(root, text='Generate Code', font=('Courier', 13, 'bold'), command=generateCode)
+button.place(relx=0.35, rely=0.9, relwidth=0.25, relheight=0.05)
 
 
 # RUN TILL CLOSED
