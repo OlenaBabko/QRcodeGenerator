@@ -1,5 +1,6 @@
 import qrcode
 from tkinter import *
+from tkinter import ttk
 
 # CREATE MAIN WINDOW
 root = Tk()
