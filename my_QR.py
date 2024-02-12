@@ -58,6 +58,13 @@ qr_name_textbox.pack(anchor=CENTER)
 
 
 
+# CHECKBOX
+satisfaction_value = IntVar()                           # uncheck=0 uncheck=1
+satisfaction_checkbox = ttk.Checkbutton(root, text="I like your app!", variable=satisfaction_value)
+satisfaction_checkbox.pack(anchor=CENTER, pady=10)
+
+
+
 # BUTTON TO GENERATE AND SAVE QRcode
 button = Button(root, text='Generate Code', font=('Courier', 13, 'bold'), command=generateCode)
 button.place(relx=0.35, rely=0.9, relwidth=0.25, relheight=0.05)
