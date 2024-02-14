@@ -10,6 +10,13 @@ root.geometry('700x700')
 root.config(bg='Gray40')
 
 
+# ADD IMAGE
+bg = PhotoImage(file="third_91.png")
+bg_image = Label(root, image=bg)
+bg_image.place(relwidth=1, relheight=1)                         # if use a .pack() this will not work as a bg
+
+
+
 
 # FUNCTION TO GENERATE QRcode AND SAVE IT
 def generateCode():
