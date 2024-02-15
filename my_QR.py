@@ -26,6 +26,7 @@ def generateCode():
     qr_img_generation = qr.make_image()                         # generating the QRcode
     qr_fileDirectory = qr_location_textbox.get() + '\\' + qr_name_textbox.get()  # getting the directory to be save
     qr_img_generation.save(f'{qr_fileDirectory}.png')           # saving the QRcode
+    satisfaction = satisfaction_value.get()
     messagebox.showinfo("QR Code Generator", "QR Code is saved successfully!")  # pop up message on saving the file
 
 
