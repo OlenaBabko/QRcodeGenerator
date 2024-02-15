@@ -5,7 +5,7 @@ from tkinter import ttk
 
 # CREATE MAIN WINDOW
 root = Tk()
-root.title('QR Code Generator')
+root.title('My_QR')
 root.geometry('700x700')
 root.config(bg='Gray40')
 
